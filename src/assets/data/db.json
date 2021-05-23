@@ -1,0 +1,435 @@
+{
+  "recruiter": [
+    {
+      "id": "1",
+      "companyName": "google",
+      "password": "google",
+      "companyMail": "123@google.com",
+      "industryType": "IT",
+      "yearsofExp": "2",
+      "About": "google job"
+    },
+    {
+      "id": "2",
+      "companyName": "facebook",
+      "password": "facebook",
+      "companyMail": "123@fb.com",
+      "industryType": "IT",
+      "yearsofExp": "2",
+      "About": "FB job"
+    }
+  ],
+  "postedJobs": [
+    {
+      "id": "1",
+      "recruiterId": "2",
+      "companyName": "facebook",
+      "jobId": "1",
+      "jobRole": "developer",
+      "expRequired": "2",
+      "skills": [
+        "java"
+      ],
+      "educationalQualifications": "B-tech",
+      "jobDescription": "axyuih",
+      "jobType": "permanent",
+      "postedDate": "23-MAY-21"
+    },
+    {
+      "id": "2",
+      "recruiterId": "2",
+      "companyName": "facebook",
+      "jobRole": "QA",
+      "expRequired": "5",
+      "skills": [
+        "Testing"
+      ],
+      "educationalQualifications": "Btech",
+      "jobDescription": "do testing",
+      "jobType": "Internship",
+      "postedDate": "23-MAY-21"
+    },
+    {
+      "id": "3",
+      "recruiterId": "2",
+      "companyName": "facebook",
+      "jobRole": "devOps",
+      "expRequired": "6",
+      "skills": [
+        "gjj"
+      ],
+      "educationalQualifications": "dh",
+      "jobDescription": "klj",
+      "jobType": "Full-Time",
+      "postedDate": "23-jume-2021"
+    },
+    {
+      "id": "4",
+      "recruiterId": "1",
+      "companyName": "google",
+      "jobId": "1",
+      "jobRole": "developer",
+      "expRequired": "2",
+      "skills": [
+        "java"
+      ],
+      "educationalQualifications": "B-tech",
+      "jobDescription": "axyuih",
+      "jobType": "permanent",
+      "postedDate": "23-MAY-21"
+    },
+    {
+      "id": "5",
+      "recruiterId": "1",
+      "companyName": "google",
+      "jobId": "2",
+      "jobRole": "yt",
+      "expRequired": "yt",
+      "skills": [
+        "yt"
+      ],
+      "educationalQualifications": "yt",
+      "jobDescription": "yt",
+      "jobType": "Full-Time",
+      "postedDate": "23-MAY-21"
+    },
+    {
+      "id": "6",
+      "recruiterId": "1",
+      "companyName": "google",
+      "jobId": "3",
+      "jobRole": "we",
+      "expRequired": "we",
+      "skills": [
+        "we"
+      ],
+      "educationalQualifications": "we",
+      "jobDescription": "we",
+      "jobType": "Full-Time",
+      "postedDate": "23-MAY-21"
+    },
+    {
+      "id": "7",
+      "recruiterId": "1",
+      "companyName": "google",
+      "jobId": "4",
+      "jobRole": "puja",
+      "expRequired": "puja",
+      "skills": [
+        "puja"
+      ],
+      "educationalQualifications": "puja",
+      "jobDescription": "puja",
+      "jobType": "Internship",
+      "postedDate": "23-MAY-21"
+    },
+    {
+      "id": "8",
+      "recruiterId": "1",
+      "companyName": "google",
+      "jobRole": "QA",
+      "expRequired": "5",
+      "skills": [
+        "Testing"
+      ],
+      "educationalQualifications": "Btech",
+      "jobDescription": "do testing",
+      "jobType": "Internship",
+      "postedDate": "23-MAY-21"
+    },
+    {
+      "id": "9",
+      "recruiterId": "1",
+      "companyName": "google",
+      "jobRole": "devOps",
+      "expRequired": "6",
+      "skills": [
+        "gjj"
+      ],
+      "educationalQualifications": "dh",
+      "jobDescription": "klj",
+      "jobType": "Full-Time",
+      "postedDate": "23-jume-2021"
+    },
+    {
+      "companyId": "2",
+      "jobRole": "UI",
+      "expRequired": "6",
+      "skills": [
+        "javascript",
+        "react"
+      ],
+      "educationalQualifications": "Btech",
+      "jobDescription": "UI development",
+      "jobType": "Full-Time",
+      "postedDate": "23-june-2021",
+      "companyName": "facebook",
+      "recruiterId": "2",
+      "id": "gey4Q0X"
+    },
+    {
+      "companyId": "2",
+      "jobRole": "Senior UI",
+      "expRequired": "6",
+      "skills": [
+        "javascript",
+        "react"
+      ],
+      "educationalQualifications": "Btech",
+      "jobDescription": "UI development",
+      "jobType": "Full-Time",
+      "postedDate": "23-june-2021",
+      "companyName": "facebook",
+      "recruiterId": "2",
+      "id": "y08JD35"
+    }
+  ],
+  "freelancer": [
+    {
+      "id": "1",
+      "username": "sds",
+      "password": "sds",
+      "mail": "ddfg",
+      "gender": "f",
+      "mobile": "676668786",
+      "hometown": "dfdg",
+      "interests": [
+        "ghj"
+      ],
+      "experience": "gfg",
+      "maritalStatus": "fgfhg",
+      "nationality": "g",
+      "languages": [
+        "ghgj"
+      ],
+      "currentLocation": "df",
+      "lastjobexp": "hjg",
+      "lastjobDesig": "hf",
+      "department": "0000hj",
+      "reasonsforleaving": "hhjkd"
+    },
+    {
+      "id": "2",
+      "username": "puja",
+      "password": "puja",
+      "mail": "ddfg",
+      "gender": "f",
+      "mobile": "676668786",
+      "hometown": "dfdg",
+      "interests": [
+        "ghj"
+      ],
+      "experience": "gfg",
+      "maritalStatus": "fgfhg",
+      "nationality": "g",
+      "languages": "ghgj",
+      "currentLocation": "df",
+      "lastjobexp": "hjg",
+      "lastjobDesig": "hf",
+      "department": "0000hj",
+      "reasonsforleaving": "hhjkd"
+    }
+  ],
+  "appliedJobs": [
+    {
+      "id": "1",
+      "freelancerId": "1",
+      "jobId": "3",
+      "jobRole": "we",
+      "expRequired": "we",
+      "skills": [
+        "we"
+      ],
+      "educationalQualifications": "we",
+      "jobDescription": "we",
+      "jobType": "Full-Time",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "2",
+      "freelancerId": "1",
+      "jobId": "4",
+      "jobRole": "puja",
+      "expRequired": "puja",
+      "skills": [
+        "puja"
+      ],
+      "educationalQualifications": "puja",
+      "jobDescription": "puja",
+      "jobType": "Internship",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "3",
+      "freelancerId": "1",
+      "jobId": "1",
+      "jobRole": "developer",
+      "expRequired": "2",
+      "skills": [
+        "java"
+      ],
+      "educationalQualifications": "B-tech",
+      "jobDescription": "axyuih",
+      "jobType": "permanent",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "4",
+      "freelancerId": "1",
+      "jobId": "1",
+      "jobRole": "developer",
+      "expRequired": "2",
+      "skills": [
+        "java"
+      ],
+      "educationalQualifications": "B-tech",
+      "jobDescription": "axyuih",
+      "jobType": "permanent",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "5",
+      "freelancerId": "1",
+      "jobId": "2",
+      "jobRole": "yt",
+      "expRequired": "yt",
+      "skills": [
+        "yt"
+      ],
+      "educationalQualifications": "yt",
+      "jobDescription": "yt",
+      "jobType": "Full-Time",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "6",
+      "freelancerId": "1",
+      "jobId": "2",
+      "jobRole": "yt",
+      "expRequired": "yt",
+      "skills": [
+        "yt"
+      ],
+      "educationalQualifications": "yt",
+      "jobDescription": "yt",
+      "jobType": "Full-Time",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "7",
+      "freelancerId": "1",
+      "jobId": "3",
+      "jobRole": "we",
+      "expRequired": "we",
+      "skills": [
+        "we"
+      ],
+      "educationalQualifications": "we",
+      "jobDescription": "we",
+      "jobType": "Full-Time",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "8",
+      "freelancerId": "1",
+      "jobId": "3",
+      "jobRole": "we",
+      "expRequired": "we",
+      "skills": [
+        "we"
+      ],
+      "educationalQualifications": "we",
+      "jobDescription": "we",
+      "jobType": "Full-Time",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "9",
+      "freelancerId": "1",
+      "companyId": "1",
+      "jobRole": "QA",
+      "expRequired": "5",
+      "skills": [
+        "Testing"
+      ],
+      "educationalQualifications": "Btech",
+      "jobDescription": "do testing",
+      "jobType": "Internship",
+      "postedDate": "23-MAY-21",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "10",
+      "freelancerId": "1",
+      "jobId": "4",
+      "jobRole": "puja",
+      "expRequired": "puja",
+      "skills": [
+        "puja"
+      ],
+      "educationalQualifications": "puja",
+      "jobDescription": "puja",
+      "jobType": "Internship",
+      "postedDate": "23-MAY-21",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "11",
+      "freelancerId": "1",
+      "companyId": "1",
+      "jobRole": "devOps",
+      "expRequired": "6",
+      "skills": [
+        "gjj"
+      ],
+      "educationalQualifications": "dh",
+      "jobDescription": "klj",
+      "jobType": "Full-Time",
+      "postedDate": "23-jume-2021",
+      "companyName": "google",
+      "recruiterCompanyName": "google"
+    },
+    {
+      "id": "12",
+      "freelancerId": "2",
+      "recruiterCompanyName": "google",
+      "jobId": "3",
+      "companyName": "google",
+      "jobRole": "we",
+      "expRequired": "we",
+      "skills": [
+        "we"
+      ],
+      "educationalQualifications": "we",
+      "jobDescription": "we",
+      "jobType": "Full-Time"
+    },
+    {
+      "companyId": "2",
+      "jobRole": "Senior UI",
+      "expRequired": "6",
+      "skills": [
+        "javascript",
+        "react"
+      ],
+      "educationalQualifications": "Btech",
+      "jobDescription": "UI development",
+      "jobType": "Full-Time",
+      "postedDate": "23-june-2021",
+      "companyName": "facebook",
+      "recruiterId": "2",
+      "id": "y08JD35",
+      "recruiterCompanyName": "facebook",
+      "freelancerId": "1"
+    }
+  ]
+}
