@@ -39,7 +39,7 @@ export class EmpregisterComponent implements OnInit {
     //console.log(this.EmpRegisterForm.value);
     this.seekerservice.employee_register(JSON.stringify(this.EmpRegisterForm.value)).subscribe(
       (response:any)=>{
-        if(response.status===1){
+        if(response){
           this.registrationsuccess='Congratulations your now a job seeker';
           this.EmpRegisterForm.reset();
             setTimeout(() => {

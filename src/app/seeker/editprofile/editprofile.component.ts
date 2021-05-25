@@ -113,6 +113,7 @@ export class EditprofileComponent implements OnInit {
     //   reasonsforleaving: this.userdata.reasonsforleaving
 
     // });
+    debugger;
     this.seekerservice.Empupdateprofile(JSON.stringify(this.EmpProfileForm.value)).subscribe((response) => {
 
       this.updated = response;

@@ -56,18 +56,16 @@ headers=['Company Name','Job Role','Skills','Job Type','Experience',''];
   apply(jobapply:any)
   {
     debugger;
-    console.log(jobapply);
     this.seekerservice.applyjob(jobapply).subscribe(
       (response:any)=>{
         if(response){
-          console.log(response);
          this.appliedmessage="Job successfully applied";
          setTimeout(()=>{
           this.appliedmessage='';
           this.getjobs();
          },2000) ;
         }else{
-          this.alreadyapplied=response.message; 
+          this.alreadyapplied="Job Already Applied"; 
           setTimeout(()=>{
             this.alreadyapplied='';
             //this.getjobs();

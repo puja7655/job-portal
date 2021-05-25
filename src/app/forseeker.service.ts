@@ -37,7 +37,7 @@ export class ForseekerService {
         'Pragma':'no-cache',
         'Accept': 'application/json, text/plain, */*',
          'Content-Type':'application/json',
-        'Authorization': 'Bearer '+this.gettoken()
+        'Authorization': 'Bearer '
       })
     };
     console.log(httpOptions);
@@ -51,7 +51,6 @@ export class ForseekerService {
         'Pragma':'no-cache',
         'Accept': 'application/json, text/plain, */*',
          'Content-Type':'application/json',
-        'Authorization': 'Bearer '+this.gettoken()
       })
     };
     return this.httpCli.get(`${PUBLIC}postedJobs?companyName=${companyname}`,httpOptions);
@@ -64,7 +63,6 @@ export class ForseekerService {
         'Pragma':'no-cache',
         'Accept': 'application/json, text/plain, */*',
          'Content-Type':'application/json',
-        'Authorization': 'Bearer '+this.gettoken()
       })
     };
     return this.httpCli.get(`${PUBLIC}postedJobs?jobRole_like=${jobrole}`,httpOptions);
@@ -78,7 +76,6 @@ export class ForseekerService {
         'Pragma':'no-cache',
         'Accept': 'application/json, text/plain, */*',
          'Content-Type':'application/json',
-        'Authorization': 'Bearer '+this.gettoken()
       })
     };
     return this.httpCli.get(`${PUBLIC}postedJobs?skills_like=${skill}`,httpOptions);
@@ -91,7 +88,6 @@ export class ForseekerService {
         'Cache-Control':'no-cache, no-store, must-revalidate',
         'Pragma':'no-cache',
         'Content-Type':'application/json',
-        'Authorization': 'Bearer'+' '+this.gettoken()
       })
     };
     job['recruiterCompanyName']=job['companyName'];
@@ -106,7 +102,6 @@ export class ForseekerService {
         'Cache-Control':'no-cache, no-store, must-revalidate',
         'Pragma':'no-cache',
         'Content-Type':'application/json',
-        'Authorization': this.gettoken()
       })
     };
     return this.httpCli.get(`${PUBLIC}freelancer/${localStorage.getItem("freelancerId")}/appliedJobs`,httpOptions);
@@ -122,7 +117,8 @@ gettoken()
 }
 Empupdateprofile(body:any)
 {
-  return this.httpCli.put(`${PUBLIC}freelancer/${localStorage.getItem("freelacerId")}`,body,
+  debugger;
+  return this.httpCli.put(`${PUBLIC}freelancer/${localStorage.getItem("freelancerId")}`,body,
   {
     
       observe:'body',
@@ -137,7 +133,6 @@ getprofile()
       'Cache-Control':'no-cache, no-store, must-revalidate',
         'Pragma':'no-cache',
       'Content-Type':'application/json',
-      'Authorization': `Bearer${this.gettoken()}`
     })
   };
   return this.httpCli.get(`${PUBLIC}freelancer/${localStorage.getItem("freelancerId")}`,httpOptions);
@@ -150,7 +145,6 @@ getprofile()
       'Cache-Control':'no-cache, no-store, must-revalidate',
         'Pragma':'no-cache',
       'Content-Type':'application/json',
-      'Authorization': `Bearer${this.gettoken()}`
     })
   };
  return this.httpCli.get(`${PUBLIC}freelancer/${id}`,httpOptions)
