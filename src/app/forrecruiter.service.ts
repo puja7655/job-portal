@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 
-const PRIVATE='http://localhost:3000/';
 const PUBLIC='http://localhost:3000/';
 @Injectable({
   providedIn: 'root'
@@ -57,11 +56,10 @@ constructor(private httpCli:HttpClient) { }
       headers: new HttpHeaders({
         'Cache-Control':'no-cache, no-store, must-revalidate',
         'Pragma':'no-cache',
-        'Content-Type':'application/json',
-        'Authorization': this.gettoken()
+        'Content-Type':'application/json'
       })
     };
-    return this.httpCli.get(`${PRIVATE}recruiter/${localStorage.getItem("recruiterId")}/postedJobs`,httpOptions);
+    return this.httpCli.get(`${PUBLIC}recruiter/${localStorage.getItem("recruiterId")}/postedJobs`,httpOptions);
   }
   getseekers()
   {
@@ -69,16 +67,11 @@ constructor(private httpCli:HttpClient) { }
       headers: new HttpHeaders({
         'Cache-Control':'no-cache, no-store, must-revalidate',
         'Pragma':'no-cache',
-        'Content-Type':'application/json',
-        'Authorization': this.gettoken()
+        'Content-Type':'application/json'
       })
     };
-    return this.httpCli.get(`${PRIVATE}recruiter/${localStorage.getItem("recruiterId")}/freelancer`,httpOptions);
+    return this.httpCli.get(`${PUBLIC}appliedJobs?recruiterCompanyName=${localStorage.getItem('currentrecruiter')}`,httpOptions);
   }
-gettoken()
-{
-  return localStorage.getItem('token');
-}
 postjob(body:any,recruiter:any)
 {
   debugger;
@@ -86,19 +79,13 @@ postjob(body:any,recruiter:any)
     headers: new HttpHeaders({
       'Cache-Control':'no-cache, no-store, must-revalidate',
         'Pragma':'no-cache',
-      'Content-Type':'application/json',
-      'Authorization': `Bearer${this.gettoken()}`
+      'Content-Type':'application/json'
     })
   };
   let finalBody=JSON.parse(body);
   finalBody['companyName']=recruiter.companyName;
   finalBody['recruiterId']=recruiter.id
-  return this.httpCli.post(`${PRIVATE}postedJobs/`,finalBody,httpOptions);
-}
-getpayload()
-{
-  let token=this.gettoken();
-  return JSON.parse(token); 
+  return this.httpCli.post(`${PUBLIC}postedJobs/`,finalBody,httpOptions);
 }
 
 getRecruiter(id:any){
@@ -106,8 +93,7 @@ getRecruiter(id:any){
     headers: new HttpHeaders({
       'Cache-Control':'no-cache, no-store, must-revalidate',
         'Pragma':'no-cache',
-      'Content-Type':'application/json',
-      'Authorization': `Bearer${this.gettoken()}`
+      'Content-Type':'application/json'
     })
   };
  return this.httpCli.get(`${PUBLIC}recruiter/${id}`,httpOptions)

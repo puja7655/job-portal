@@ -13,12 +13,12 @@ export class LoginComponent implements OnInit {
   }
   employeeloginpage()
   {
-    this.router.navigate(['emp_login'],{relativeTo:this.activatedroute});
+    this.router.navigate(['empLogin'],{relativeTo:this.activatedroute});
     this.tabset=true;
   }
   recruiterloginpage()
   {
-    this.router.navigate(['rec_login'],{relativeTo:this.activatedroute});
+    this.router.navigate(['recLogin'],{relativeTo:this.activatedroute});
     this.tabset=true;
   }
 }

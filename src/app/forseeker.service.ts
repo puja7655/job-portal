@@ -37,7 +37,6 @@ export class ForseekerService {
         'Pragma':'no-cache',
         'Accept': 'application/json, text/plain, */*',
          'Content-Type':'application/json',
-        'Authorization': 'Bearer '
       })
     };
     console.log(httpOptions);
@@ -90,8 +89,15 @@ export class ForseekerService {
         'Content-Type':'application/json',
       })
     };
+    job['jobId']=job['id']
     job['recruiterCompanyName']=job['companyName'];
     job['freelancerId']=localStorage.getItem("freelancerId");
+    let freelancer=JSON.parse(localStorage.getItem('freelancer'));
+    job['username']=freelancer.username;
+    job['mail']=freelancer.mail;
+    job['mobile']=freelancer.mobile;
+    job['currentLocation']=freelancer.currentLocation;
+    job['interests']=freelancer.interests;
     return this.httpCli.post(`${PUBLIC}appliedJobs/`,job,httpOptions);
   }
   getappliedjobs()
@@ -111,10 +117,7 @@ export class ForseekerService {
     return this.httpCli.post(`${PUBLIC}employee/uploadpicture/${localStorage.getItem("freelancerId")}`,fd);
    
   }
-gettoken()
-{
-  return localStorage.getItem('token');
-}
+
 Empupdateprofile(body:any)
 {
   debugger;

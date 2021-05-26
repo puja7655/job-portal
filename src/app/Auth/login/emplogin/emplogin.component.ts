@@ -18,7 +18,7 @@ export class EmploginComponent implements OnInit {
   ngOnInit() {
   }
   moveToRegister() {
-    this.router.navigate(['register/emp_register']);
+    this.router.navigate(['register/empRegister']);
   }
   login() {
     // if (!this.loginForm.valid) {
@@ -32,6 +32,7 @@ export class EmploginComponent implements OnInit {
             this.loginsuccess = "Login Success-Going to Dashboard";
             localStorage.setItem('token',JSON.stringify(response[0]));
             localStorage.setItem('currentemployee',response[0].username);
+            localStorage.setItem('freelancer',JSON.stringify(response[0]));
               localStorage.setItem('freelancerId',response[0].id);
             this.loginForm.reset();
             setTimeout(() => {

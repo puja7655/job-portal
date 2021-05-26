@@ -43,7 +43,7 @@ export class EmpregisterComponent implements OnInit {
           this.registrationsuccess='Congratulations your now a job seeker';
           this.EmpRegisterForm.reset();
             setTimeout(() => {
-              this.router.navigate(['/login/emp_login']);
+              this.router.navigate(['/login/empLogin']);
             }, 3000);
         }else{
           this.regisfail='You are already a job seeker';

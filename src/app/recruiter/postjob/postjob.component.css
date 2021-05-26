@@ -16,6 +16,9 @@
     animation-duration: 1s; */
    
 }
+.navbar{
+    background-color: black;
+}
 .nav-link:active{
    color: black;
 }

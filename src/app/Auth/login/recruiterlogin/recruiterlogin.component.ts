@@ -18,7 +18,7 @@ export class RecruiterloginComponent implements OnInit {
   ngOnInit() {
   }
   moveToRegister() {
-    this.router.navigate(['register/rec_register']);
+    this.router.navigate(['register/recRegister']);
   }
   login() {
     debugger;

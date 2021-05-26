@@ -18,17 +18,17 @@ import { RecruiterregisterComponent } from './Auth/regis/recruiterregister/recru
 import {EditprofileComponent} from './seeker/editprofile/editprofile.component';
 import {SearchComponent} from './seeker/search/search.component';
 const routes: Routes = [
-  {path:'',redirectTo:'login/emp_login',pathMatch:'full'}, 
+  {path:'',redirectTo:'login/empLogin',pathMatch:'full'}, 
   //for default pageload..
   //pathmatch can be "prefix" or "full"..
   //when path is empty we use "full",if we want to add to some prefix we then equalise pathMatch="prefix"
   {path:'login',component:LoginComponent,children:[
-    {path:'emp_login',component:EmploginComponent},
-    {path:'rec_login',component:RecruiterloginComponent}
+    {path:'empLogin',component:EmploginComponent},
+    {path:'recLogin',component:RecruiterloginComponent}
   ]},
   {path:'register',component:RegisComponent,children:[
-    {path:'emp_register',component:EmpregisterComponent},
-    {path:'rec_register',component:RecruiterregisterComponent}
+    {path:'empRegister',component:EmpregisterComponent},
+    {path:'recRegister',component:RecruiterregisterComponent}
   ]},
   {path:'dashboard',component:DashboardComponent,children:[
   {path:'jobs',component:JobsComponent},

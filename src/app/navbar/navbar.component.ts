@@ -15,6 +15,6 @@ username:any=localStorage.getItem('currentemployee');
 logout()
 {
   this.seekerservice.logout();
-  this.router.navigate(['login/emp_login']);
+  this.router.navigate(['login/empLogin']);
 }
 }

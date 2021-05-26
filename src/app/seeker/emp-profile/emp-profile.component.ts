@@ -40,7 +40,7 @@ export class EmpProfileComponent implements OnInit {
   }
   logout() {
     this.seekerservice.logout();
-    this.router.navigate(['login/emp_login']);
+    this.router.navigate(['login/empLogin']);
   }
   selectimage(event) {
     if (event.target.files.length > 0) {

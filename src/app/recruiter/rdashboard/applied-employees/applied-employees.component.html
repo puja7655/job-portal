@@ -1,7 +1,7 @@
 <div class="conatiner mt-3 ">
     <div class="row" *ngIf="!notapplied; else Noapplied">
         <table class="table">
-            <thead>
+            <thead class="bg-info">
                 <tr>
                     <th *ngFor="let key of headers">{{key}}</th>
                 </tr>
@@ -20,8 +20,8 @@
                     </td>
                     
                     <td>
-                        <span *ngFor="let job of info.appliedJobs">
-                            {{job.jobId}},
+                        <span *ngFor="let job of info.appliedJobIds">
+                            {{job}},
                         </span>
                     </td>
                     <td>

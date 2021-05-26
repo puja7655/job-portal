@@ -26,7 +26,26 @@ getSeekers()
     (response:any)=>{
       if(response)
       {
-        this.seekersInfo=response;
+        let map=new Map();
+        response.forEach((ele)=>{
+            if(!map.has(ele.freelancerId)){
+              var json={}
+              json['username']=ele.username
+              json['mail']=ele.mail
+              json['mobile']=ele.mobile;
+              json['currentLocation']=ele.currentLocation;
+              json['interests']=ele.interests;
+              json['appliedJobIds']=[ele.jobId]
+              map.set(ele.freelancerId,json)
+            }else{
+              var a=map.get(ele.freelancerId);
+              a.appliedJobIds.push(ele.jobId);
+              map.set(ele.freelancerId,a);
+            } 
+        })
+        let arr=[]
+        map.forEach((x,y)=>{arr.push(x)})
+        this.seekersInfo=arr;
        // this.seekerinterest=response.employeearray.details.interests;
         console.log(this.seekersInfo);
       }

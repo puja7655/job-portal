@@ -34,7 +34,7 @@ export class RecruiterregisterComponent implements OnInit {
           this.registrationsuccess='Congratulations your now a job Giver';
           this.RecruiterRegisterForm.reset();
             setTimeout(() => {
-              this.router.navigate(['/login/rec_login']);
+              this.router.navigate(['/login/recLogin']);
             }, 1000);
         }else{
           this.regisfail='You are already a job Giver';

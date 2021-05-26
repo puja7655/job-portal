@@ -14,12 +14,12 @@ export class RegisComponent implements OnInit {
   }
   employeeregisterpage()
   {
-    this.router.navigate(['emp_register'],{relativeTo:this.activatedroute});
+    this.router.navigate(['empRegister'],{relativeTo:this.activatedroute});
     this.tabset=true;
   }
   recruiterregisterpage()
   {
-    this.router.navigate(['rec_register'],{relativeTo:this.activatedroute});
+    this.router.navigate(['recRegister'],{relativeTo:this.activatedroute});
     this.tabset=true;
   }
 }

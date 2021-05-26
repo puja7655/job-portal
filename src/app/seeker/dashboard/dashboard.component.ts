@@ -16,7 +16,7 @@ export class DashboardComponent implements OnInit {
   logoutemployee()
   {
     this.seekerservie.logout();
-    this.router.navigate(['login/emp_login'],)
+    this.router.navigate(['login/empLogin'],)
   }
   jobs()
   {
