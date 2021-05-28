@@ -29,7 +29,8 @@ export class RecruiterloginComponent implements OnInit {
     this.recservice.login(this.loginForm.value.companyName,this.loginForm.value.password)
       .subscribe(
         (response: any) => {
-          if (response) {
+          if (response && response.length>0) {
+            localStorage.setItem('loggedIn','true');
             this.loginsuccess = "Login Success-Going to Dashboard";
             localStorage.setItem('token',JSON.stringify(response[0]));
            localStorage.setItem('recruiterId',response[0].id);

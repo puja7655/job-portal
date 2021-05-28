@@ -20,15 +20,27 @@ export class DashboardComponent implements OnInit {
   }
   jobs()
   {
+    if(localStorage.getItem('loggedIn'))
     this.router.navigate(['jobs'],{relativeTo:this.activeroute});
+    else{
+      this.router.navigate(['login/empLogin'],)
+    }
   }
   appliedjobs()
   {
+    if(localStorage.getItem('loggedIn'))
     this.router.navigate(['appliedjobs'],{relativeTo:this.activeroute});
+    else{
+      this.router.navigate(['login/empLogin'],)
+    }
   }
   gotoprofilepage()
   {
+    if(localStorage.getItem('loggedIn'))
     this.router.navigate(['seeker/eprofile']);
+    else{
+      this.router.navigate(['login/empLogin'],)
+    }
   }
 
 }

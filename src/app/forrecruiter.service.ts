@@ -61,6 +61,17 @@ constructor(private httpCli:HttpClient) { }
     };
     return this.httpCli.get(`${PUBLIC}recruiter/${localStorage.getItem("recruiterId")}/postedJobs`,httpOptions);
   }
+  getappliedjobs(){
+    const httpOptions = {
+      headers: new HttpHeaders({
+        'Cache-Control':'no-cache, no-store, must-revalidate',
+        'Pragma':'no-cache',
+        'Content-Type':'application/json'
+      })
+    };
+    return this.httpCli.get(`${PUBLIC}appliedJobs?recruiterCompanyName=${localStorage.getItem('currentrecruiter')}`,httpOptions);
+  
+  }
   getseekers()
   {
     const httpOptions = {
@@ -110,8 +121,9 @@ getRecruiter(id:any){
 // }
 logout()
 {
-  localStorage.removeItem('token');
-  localStorage.removeItem('currentrecruiter');
+  localStorage.clear();
+  // localStorage.removeItem('token');
+  // localStorage.removeItem('currentrecruiter');
   // localStorage.removeItem('currentemployeeid')
 }
 }

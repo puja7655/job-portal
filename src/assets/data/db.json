@@ -19,13 +19,73 @@
       "About": "FB job"
     },
     {
-      "companyName": "",
-      "password": "",
-      "companyMail": "puja",
-      "industryType": "",
-      "yearsofExp": "",
-      "About": "",
-      "id": "ZwcL4hq"
+      "username": "puja",
+      "password": "puja",
+      "mail": "Puja.singh7655@gmail.com",
+      "gender": "Female",
+      "mobile": "08093992801",
+      "hometown": "Patna",
+      "interests": [
+        "ML"
+      ],
+      "experience": "",
+      "maritalStatus": "",
+      "nationality": "",
+      "languages": [
+        ""
+      ],
+      "currentLocation": "",
+      "lastjobexp": "",
+      "lastjobDesig": "",
+      "department": "",
+      "reasonsforleaving": "",
+      "id": "-HLh6V9"
+    },
+    {
+      "username": "puja",
+      "password": "puja",
+      "mail": "Puja.singh7655@gmail.com",
+      "gender": "Female",
+      "mobile": "08093992801",
+      "hometown": "Patna",
+      "interests": [
+        "IOT"
+      ],
+      "experience": 4,
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "languages": [
+        "English"
+      ],
+      "currentLocation": "Bengaluru",
+      "lastjobexp": 5,
+      "lastjobDesig": "Developer",
+      "department": "Service",
+      "reasonsforleaving": "Career ",
+      "id": "fUpMG-D"
+    },
+    {
+      "username": "puja",
+      "password": "Puja",
+      "mail": "Puja.singh7655@gmail.com",
+      "gender": "Female",
+      "mobile": "08093992801",
+      "hometown": "Patna",
+      "interests": [
+        "AI"
+      ],
+      "experience": 5,
+      "maritalStatus": "Single",
+      "nationality": "Indian",
+      "languages": [
+        "English"
+      ],
+      "currentLocation": "Bengaluru",
+      "lastjobexp": 3,
+      "lastjobDesig": "Developer",
+      "department": "Service",
+      "reasonsforleaving": "",
+      "id": "waKsgh4"
     }
   ],
   "postedJobs": [
@@ -33,13 +93,13 @@
       "id": "6",
       "recruiterId": "1",
       "companyName": "google",
-      "jobRole": "we",
-      "expRequired": "we",
+      "jobRole": "UI Developer",
+      "expRequired": "3",
       "skills": [
-        "we"
+        "JavaScript,HTML,CSS"
       ],
-      "educationalQualifications": "we",
-      "jobDescription": "we",
+      "educationalQualifications": "B-tech",
+      "jobDescription": "Front end developer required",
       "jobType": "Full-Time",
       "postedDate": "23-MAY-21"
     },
@@ -47,14 +107,14 @@
       "id": "7",
       "recruiterId": "1",
       "companyName": "google",
-      "jobRole": "puja",
-      "expRequired": "puja",
+      "jobRole": "Data Engineer",
+      "expRequired": "5",
       "skills": [
-        "puja"
+        "SQL"
       ],
-      "educationalQualifications": "puja",
-      "jobDescription": "puja",
-      "jobType": "Internship",
+      "educationalQualifications": "B-tech",
+      "jobDescription": "Data Engineer Required with 5+ experience",
+      "jobType": "Full-Time",
       "postedDate": "23-MAY-21"
     },
     {
@@ -62,7 +122,7 @@
       "recruiterId": "1",
       "companyName": "google",
       "jobRole": "QA",
-      "expRequired": "5",
+      "expRequired": "1",
       "skills": [
         "Testing"
       ],
@@ -78,14 +138,15 @@
       "jobRole": "devOps",
       "expRequired": "6",
       "skills": [
-        "gjj"
+        "Java"
       ],
-      "educationalQualifications": "dh",
-      "jobDescription": "klj",
+      "educationalQualifications": "B-tech",
+      "jobDescription": "DevOps Engineer required",
       "jobType": "Full-Time",
       "postedDate": "23-jume-2021"
     },
     {
+      "id": "gey4Q0X",
       "companyId": "2",
       "jobRole": "UI",
       "expRequired": "6",
@@ -98,8 +159,7 @@
       "jobType": "Full-Time",
       "postedDate": "23-june-2021",
       "companyName": "facebook",
-      "recruiterId": "2",
-      "id": "gey4Q0X"
+      "recruiterId": "2"
     },
     {
       "companyId": "2",
@@ -116,128 +176,135 @@
       "companyName": "facebook",
       "recruiterId": "2",
       "id": "y08JD35"
+    },
+    {
+      "companyId": "1",
+      "jobRole": "Java Developer",
+      "expRequired": "6",
+      "skills": [
+        "Java",
+        "Sql"
+      ],
+      "educationalQualifications": "B-tech",
+      "jobDescription": "Java Developer Required",
+      "jobType": "Full-Time",
+      "postedDate": "28 May 2021",
+      "companyName": "google",
+      "recruiterId": "1",
+      "id": "FhrllXM"
+    },
+    {
+      "companyId": "1",
+      "jobRole": "Data Enginner",
+      "expRequired": "6",
+      "skills": [
+        "Java",
+        "Sql"
+      ],
+      "educationalQualifications": "M-tech",
+      "jobDescription": "Data Engineer",
+      "jobType": "Full-Time",
+      "postedDate": "28 May 2021",
+      "companyName": "google",
+      "recruiterId": "1",
+      "id": "HlXXGmH"
     }
   ],
   "freelancer": [
     {
-      "_id": "1",
       "username": "sds",
       "password": "sds",
-      "mail": "ddfg",
-      "gender": "f",
-      "mobile": "676668786",
-      "hometown": "dfdg",
+      "mail": "sds@gmail.com",
+      "gender": "Female",
+      "mobile": "08093992801",
+      "hometown": "Patna",
       "interests": [
-        "ghj"
+        "Javascript"
       ],
-      "experience": "gfg",
-      "maritalStatus": "fgfhg",
+      "experience": "4.8",
+      "maritalStatus": "Single",
       "nationality": "India",
       "languages": [
         "ghgj"
       ],
-      "currentLocation": "df",
-      "lastjobexp": "hjg",
-      "lastjobDesig": "hf",
-      "department": "0000hj",
-      "reasonsforleaving": "hhjkd",
+      "currentLocation": "BENGALURU",
+      "lastjobexp": "2",
+      "lastjobDesig": "Developer",
+      "department": "IT",
+      "reasonsforleaving": "Carrer growth",
       "id": "1"
     },
     {
       "id": "2",
       "username": "puja",
       "password": "puja",
-      "mail": "ddfg",
+      "mail": "puja.singh7655@gmail.com",
       "gender": "f",
-      "mobile": "676668786",
-      "hometown": "dfdg",
+      "mobile": "0676668786",
+      "hometown": "Delhi",
       "interests": [
-        "ghj"
+        "Development"
       ],
-      "experience": "gfg",
-      "maritalStatus": "fgfhg",
-      "nationality": "g",
-      "languages": "ghgj",
-      "currentLocation": "df",
-      "lastjobexp": "hjg",
-      "lastjobDesig": "hf",
-      "department": "0000hj",
-      "reasonsforleaving": "hhjkd"
+      "experience": "4",
+      "maritalStatus": "Single",
+      "nationality": "India",
+      "languages": [
+        "Javascript"
+      ],
+      "currentLocation": "Bengaluru",
+      "lastjobexp": "2",
+      "lastjobDesig": "Developer",
+      "department": "IT",
+      "reasonsforleaving": "City change"
     }
   ],
   "appliedJobs": [
     {
-      "companyId": "2",
-      "jobRole": "UI",
-      "expRequired": "6",
+      "id": "1applied8",
+      "recruiterId": "1",
+      "companyName": "google",
+      "jobRole": "QA",
+      "expRequired": "1",
       "skills": [
-        "javascript",
-        "react"
+        "Testing"
       ],
       "educationalQualifications": "Btech",
-      "jobDescription": "UI development",
-      "jobType": "Full-Time",
-      "postedDate": "23-june-2021",
-      "companyName": "facebook",
-      "recruiterId": "2",
-      "id": "gey4Q0X",
-      "jobId": "gey4Q0X",
-      "recruiterCompanyName": "facebook",
+      "jobDescription": "do testing",
+      "jobType": "Internship",
+      "postedDate": "23-MAY-21",
+      "jobId": "8",
+      "recruiterCompanyName": "google",
       "freelancerId": "1",
       "username": "sds",
-      "mail": "ddfg",
-      "mobile": "676668786",
-      "currentLocation": "df",
+      "mail": "sds@gmail.com",
+      "mobile": "08093992801",
+      "currentLocation": "BENGALURU",
       "interests": [
-        "ghj"
+        "Javascript"
       ]
     },
     {
-      "id": "6",
+      "id": "1applied7",
       "recruiterId": "1",
       "companyName": "google",
-      "jobRole": "we",
-      "expRequired": "we",
+      "jobRole": "Data Engineer",
+      "expRequired": "5",
       "skills": [
-        "we"
+        "SQL"
       ],
-      "educationalQualifications": "we",
-      "jobDescription": "we",
+      "educationalQualifications": "B-tech",
+      "jobDescription": "Data Engineer Required with 5+ experience",
       "jobType": "Full-Time",
       "postedDate": "23-MAY-21",
-      "jobId": "6",
+      "jobId": "7",
       "recruiterCompanyName": "google",
       "freelancerId": "1",
       "username": "sds",
-      "mail": "ddfg",
-      "mobile": "676668786",
-      "currentLocation": "df",
+      "mail": "sds@gmail.com",
+      "mobile": "08093992801",
+      "currentLocation": "BENGALURU",
       "interests": [
-        "ghj"
-      ]
-    },
-    {
-      "id": "9",
-      "recruiterId": "1",
-      "companyName": "google",
-      "jobRole": "devOps",
-      "expRequired": "6",
-      "skills": [
-        "gjj"
-      ],
-      "educationalQualifications": "dh",
-      "jobDescription": "klj",
-      "jobType": "Full-Time",
-      "postedDate": "23-jume-2021",
-      "jobId": "9",
-      "recruiterCompanyName": "google",
-      "freelancerId": "1",
-      "username": "sds",
-      "mail": "ddfg",
-      "mobile": "676668786",
-      "currentLocation": "df",
-      "interests": [
-        "ghj"
+        "Javascript"
       ]
     }
   ]

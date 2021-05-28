@@ -87,6 +87,8 @@ export class ForseekerService {
         'Cache-Control':'no-cache, no-store, must-revalidate',
         'Pragma':'no-cache',
         'Content-Type':'application/json',
+        'observe': 'response',
+        'Access-Control-Expose-Headers':'*',
       })
     };
     job['jobId']=job['id']
@@ -98,6 +100,7 @@ export class ForseekerService {
     job['mobile']=freelancer.mobile;
     job['currentLocation']=freelancer.currentLocation;
     job['interests']=freelancer.interests;
+    job['id']=freelancer.id+'applied'+job['jobId'];
     return this.httpCli.post(`${PUBLIC}appliedJobs/`,job,httpOptions);
   }
   getappliedjobs()
@@ -154,8 +157,9 @@ getprofile()
 }
 logout()
 {
-  localStorage.removeItem('token');
-  localStorage.removeItem('currentemployee');
-  localStorage.removeItem('currentemployeeid')
+  localStorage.clear();
+  // //localStorage.removeItem('token');
+  // localStorage.removeItem('currentemployee');
+  // localStorage.removeItem('currentemployeeid')
 }
 }

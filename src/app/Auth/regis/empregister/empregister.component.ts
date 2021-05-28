@@ -34,9 +34,16 @@ export class EmpregisterComponent implements OnInit {
       reasonsforleaving: ['']
       });
   }
+
+  /**
+   * Method to register an employee;
+   * Param-none.
+   */
   registeremployee()
   {
-    //console.log(this.EmpRegisterForm.value);
+    debugger;
+    this.EmpRegisterForm.value.interests=this.EmpRegisterForm.value.interests.toString().split(",");
+    this.EmpRegisterForm.value.languages=this.EmpRegisterForm.value.languages.toString().split(",");
     this.seekerservice.employee_register(JSON.stringify(this.EmpRegisterForm.value)).subscribe(
       (response:any)=>{
         if(response){

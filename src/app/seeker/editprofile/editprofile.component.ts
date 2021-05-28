@@ -114,6 +114,8 @@ export class EditprofileComponent implements OnInit {
 
     // });
     debugger;
+    this.EmpProfileForm.value.interests=this.EmpProfileForm.value.interests.toString().split(",");
+    this.EmpProfileForm.value.languages=this.EmpProfileForm.value.languages.toString().split(",");
     this.seekerservice.Empupdateprofile(JSON.stringify(this.EmpProfileForm.value)).subscribe((response) => {
 
       this.updated = response;

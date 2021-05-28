@@ -50,7 +50,7 @@ getSeekers()
         console.log(this.seekersInfo);
       }
       else{
-        this.notapplied=response.message;
+        this.notapplied="No One has Applied";
         console.log(this.notapplied);
       }
 

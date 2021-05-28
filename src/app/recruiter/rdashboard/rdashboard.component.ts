@@ -20,15 +20,27 @@ export class RdashboardComponent implements OnInit {
   }
   applied_Employees()
   {
+    if(localStorage.getItem('loggedIn'))
     this.router.navigate(['applied'],{relativeTo:this.activeroute});
+    else{
+      this.router.navigate(['login/recLogin'],)
+    }
   }
   posted_jobs()
   {
+    if(localStorage.getItem('loggedIn'))
     this.router.navigate(['postedjobs'],{relativeTo:this.activeroute});
+    else{
+      this.router.navigate(['login/recLogin'],)
+    }
   }
   gotoprofilepage()
   {
+    if(localStorage.getItem('loggedIn'))
     this.router.navigate(['recruiter/rprofile']);
+    else{
+      this.router.navigate(['login/recLogin'],)
+    }
   }
 
 }

@@ -21,6 +21,7 @@ export class EmploginComponent implements OnInit {
     this.router.navigate(['register/empRegister']);
   }
   login() {
+    debugger
     // if (!this.loginForm.valid) {
     //   console.log('Invalid'); return;
     // }
@@ -28,8 +29,9 @@ export class EmploginComponent implements OnInit {
     this.empservice.login(this.loginForm.value.username,this.loginForm.value.password)
       .subscribe(
         (response: any) => {
-          if (response) {
+          if (response && response.length>0) {
             this.loginsuccess = "Login Success-Going to Dashboard";
+            localStorage.setItem('loggedIn','true');
             localStorage.setItem('token',JSON.stringify(response[0]));
             localStorage.setItem('currentemployee',response[0].username);
             localStorage.setItem('freelancer',JSON.stringify(response[0]));
